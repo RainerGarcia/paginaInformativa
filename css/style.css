@@ -1,0 +1,167 @@
+body{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	font-family: sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+.header{
+	width: 100%;
+	height: 24rem;
+	background-color: #000000;
+}
+
+.banner{
+
+	width: 100%;
+	height: 20rem;
+}
+
+.navegacion{
+	display: inline-flex;
+	margin-top: 10px;
+	gap: 1rem;
+	display: flex;
+	justify-content: center;
+}
+
+.navegacion>a{
+	color: #D8C4B6;
+	background-color: #4B5945;
+	padding: 10px;
+	width: 50%;
+	border: 3px solid transparent;
+	text-align: center;
+	font-size: 1.4rem;
+
+}
+
+.opcion1{
+	border-radius: 0px 50px 50px 0px;
+}
+
+.opcion2{
+	border-radius: 50px 0px 0px 50px;
+}
+
+.navegacion>a:hover{
+	box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.navegacion>a.activo{
+	color: #09122C;
+	background-color: #D8C4B6;
+}
+
+.main{
+	width: 100%;
+	background-color: #FBF5E5;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.contenido {
+    grid-column: span 5 / span 5;
+    background-color: #E4D1B9;
+    border-top: solid 10px #000000;
+    padding-bottom: 5rem;
+}
+
+.parrafo{
+	display: none;
+	font-size: 1.2rem;
+	text-align: justify;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+
+}
+
+.parrafo:target {
+	display: block;
+}
+
+.menu{
+	display: grid;
+	gap: 5px;
+	background-color: #000000;
+	padding: 7px;
+
+}
+
+.menu>div>div{
+	transition: transform 0.5s ease-in-out;
+}
+
+.menu>.options>div:hover{
+	transform: scale(1.2);
+}
+
+.block{
+	position: relative;
+	cursor: pointer;
+}
+
+.block>p{
+	width: 60%;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.ejemplo{
+	width: 100%;
+	display:flex;
+	justify-content: center;
+	margin-top: 3rem;
+}
+
+.ejemplo>img{
+
+	width: 30rem;
+}
+
+.arrow{
+	width: 13rem;
+	height: 4rem;
+	margin-left: 7px;
+}
+
+.selection{
+    position: absolute;
+    top: 11%;
+    left: 25%;
+}
+
+.foot{
+	width: 100%;
+	background-color: #F0BB78;
+	border-top: solid 10px #000000;
+}
+
+.foot>div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2rem;
+}
+
+.foot>p{
+	width: 100%;
+	text-align: center;
+	font-size: 0.9rem;
+	margin-top: 2rem;
+
+}
+
+.barra-foot{
+	display: inline-flex;
+	gap: 6rem;
+}
+
+.barra-foot>a{
+	color: #131010;
+}

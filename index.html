@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Estructura de Datos</title>
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<header class="header">
+		<img class="banner" src="/img/banner_estructuraDeDatos.png" alt="imagen.jpeg">
+		<nav class="navegacion">
+			<a class="activo opcion1" href="/index.html" title="estructura_de_datos">Estructura de datos</a>
+			<a class="opcion2" href="/complexity.html" title="time_complexity">time complexity</a>
+		</nav>
+	</header>
+	<main class="main">
+		<article class="menu">
+			<div class="options">
+				<div id="default" class="block" onclick="location.hash='tab1';">
+					<img class="arrow" src="/img/arrow_block.png" alt="arrow_block.png">
+					<p class="selection">Definición</p>
+				</div>
+				<div class="block" onclick="location.hash='tab2';">
+					<img class="arrow" src="/img/arrow_block.png" alt="arrow_block.png">
+					<p class="selection">Tipos</p>
+				</div>
+				<div class="block" onclick="location.hash='tab3';">
+					<img class="arrow" src="/img/arrow_block.png" alt="arrow_block.png">
+					<p class="selection">Array</p>
+				</div>
+				<div class="block" onclick="location.hash='tab4';">
+					<img class="arrow" src="/img/arrow_block.png" alt="arrow_block.png">
+					<p class="selection">Listas enlazadas</p>
+				</div>
+				<div class="block" onclick="location.hash='tab5';">
+					<img class="arrow" src="/img/arrow_block.png" alt="arrow_block.png">
+					<p class="selection">Pila</p>
+				</div>
+				<div class="block" onclick="location.hash='tab6';">
+					<img class="arrow" src="/img/arrow_block.png" alt="arrow_block.png">
+					<p class="selection">Colas</p>
+				</div>
+				<div class="block" onclick="location.hash='tab7';">
+					<img class="arrow" src="/img/arrow_block.png" alt="arrow_block.png">
+					<p class="selection">Árboles</p>
+				</div>
+				<div class="block" onclick="location.hash='tab8';">
+					<img class="arrow" src="/img/arrow_block.png" alt="arrow_block.png">
+					<p class="selection">Grafos</p>
+				</div>
+			</div>
+		</article>
+		<article class="contenido">
+			<section id="tab1" class="parrafo">
+				<h2 class="titulo">Definición de estructuras de datos</h2>
+				<p>Las estructuras de datos en programación son un modo de representar información en una computadora, aunque además, cuentan con un comportamiento interno. ¿Qué significa? Que se rige por determinadas reglas/restricciones que han sido dadas por la forma en que está construida internamente.</p>
+				<p>Ya sean las más utilizadas comúnmente -como las variables, arrays, conjuntos o clases- o las diseñadas para un propósito específico -árboles, grafos, tablas, etc.-, una estructura de datos nos permite trabajar en un algo nivel de abstracción almacenando información para luego acceder a ella, modificarla y manipularla.</p>
+			</section>
+			<section id="tab2" class="parrafo">
+				<h2 class="titulo">Tipos de estructura de datos</h2>
+				<h4>Estructura de datos estática</h4>
+				<p>Las estructuras de datos estáticas son aquellas en las que el tamaño ocupado en memoria se define antes de que el programa se ejecute y no puede modificarse dicho tamaño durante la ejecución del programa, mientras que una estructura de datos dinámica es aquella en la que el tamaño ocupado en memoria puede modificarse durante la ejecución del programa.</p>
+				<p>Cada tipo de estructura dependerá del tipo de aplicación que se requiera.</p>
+				<h4>Estructura de datos dinámica</h4>
+				<p>Las estructuras de datos dinámicas son una colección de elementos -nodos- que normalmente se utilizan para dejar asentados registros. A diferencia de un array que contiene espacio para almacenar un número fijo de elementos, una estructura dinámica de datos se amplía y contrae durante la ejecución del programa.</p>
+				<h4>Estructura de datos lineal</h4>
+				<p>Las estructuras de datos lineales son aquellas en las que los elementos ocupan lugares sucesivos en la estructura y cada uno de ellos tiene un único sucesor y un único predecesor, es decir, sus elementos están ubicados uno al lado del otro relacionados en forma lineal.</p>
+				<h4>Estructura de datos no lineal</h4>
+				<p>Las estructuras de datos no lineales, también llamadas multienlazadas, son aquellas en las que cada elemento puede estar enlazado a cualquier otro componente. Es decir, cada elemento puede tener varios sucesores o varios predecesores.</p>
+			</section>
+			<section id="tab3" class="parrafo">
+				<h2 class="titulo">Array</h2>
+				<p>¿Qué es un array en programación? Un array es un tipo de dato estructurado que permite almacenar un conjunto de datos homogéneo y ordenado, es decir, todos ellos del mismo tipo y relacionados. Su condición de homogéneo, indica que sus elementos están compuestos por el mismo tipo de dato, y su condición de ordenado hace que se pueda identificar del primer al último elemento que lo compone.</p>
+				<div class="ejemplo">
+					<img class="ejemplo" src="/img/array.jpg">
+				</div>
+			</section>
+			<section id="tab4" class="parrafo">
+				<h2 class="titulo">Listas enlazadas</h2>
+				<p>En las estructuras de datos, las listas enlazadas se construyen con elementos que están ubicados en una secuencia. Aquí, cada elemento se conecta con el siguiente a través de un enlace que contiene la posición del siguiente elemento. De este modo, teniendo la referencia del principio de la lista podemos acceder a todos los elementos de la misma.</p>
+				<div class="ejemplo">
+					<img class="ejemplo" src="/img/listas_enlazadas.webp">
+				</div>
+			</section>
+			<section id="tab5" class="parrafo">
+				<h2 class="titulo">Pila</h2>
+				<p>La pila es un tipo especial de lista lineal dentro de las estructuras de datos dinámicas que permite almacenar y recuperar datos, siendo el modo de acceso a sus elementos de tipo LIFO (del inglés Last In, First Out, es decir, último en entrar, primero en salir). ¿Cómo funciona? A través de dos operaciones básicas: apilar (push), que coloca un objeto en la pila, y su operación inversa, desapilar (pop), que retira el último elemento apilado.</p>
+				<div class="ejemplo">
+					<img class="ejemplo" src="/img/pila.png">
+				</div>
+			</section>
+			<section id="tab6" class="parrafo">
+				<h2 class="titulo">Colas</h2>
+				<p>Esta estructura es otro tipo de lista que nos permite emular el comportamiento de una fila o cola de la vida real donde el primer elemento en ingresar a la fila es el primero en salir, lo que quiere decir que las inserciones (Encolar) se realizan al final y las extracciones (Desencolar) se realizan al frente de la cola, lo cual se conoce como FIFO (First in First out).</p>
+				<div class="ejemplo">	
+					<img class="ejemplo" src="/img/cola.webp">
+				</div>
+			</section>
+			<section id="tab7" class="parrafo">
+				<h2 class="titulo">Árboles</h2>
+				<p>En estructura de datos, los árboles consisten en una estructura no lineal que se utiliza para representar datos con una relación jerárquica en la que cada elemento tiene un único antecesor y puede tener varios sucesores.</p>
+				<p>Los mismos se encuentran clasificados en: árbol general, un árbol donde cada elemento puede tener un número ilimitado de sub árboles y árboles binarios, que son una estructura de datos homogénea, dinámica y no lineal en donde a cada elemento le pueden seguir como máximo dos nodos.</p>
+				<div class="ejemplo">
+					<img src="/img/arbol.png">
+				</div>
+			</section>
+			<section id="tab8" class="parrafo">
+				<h2 class="titulo">Grafos</h2>
+				<p>Otro tipo de no lineal de estructura de datos en programación, son los grafos. Se trata de una estructura matemática formada por un conjunto de puntos —una estructura de datos— y un conjunto de líneas, cada una de las cuales une un punto a otro. Los puntos se llaman nodos o vértices del grafo y las líneas se llaman aristas o arcos.</p>
+				<div class="ejemplo">
+					<img src="/img/grafos.png">
+				</div>
+			</section>
+		</article>
+	</main>
+	<footer class="foot">
+		<div>
+			<nav class="barra-foot">
+				<a href="/index.html" title="estructura_de_datos">Estructura de datos</a>
+				<a href="/complexity.html" title="time_complexity">time complexity</a>
+				<a href="https://www.iutepal.edu.ve/inicio" title="universidad" target="_blank">IUTEPAL</a>
+			</nav>
+		</div>
+		<p>Autor: Rainer García. Copyright© 2025 Reservados todos los derechos.</p>
+	</footer>
+	<script>
+        window.onload = function() {
+            document.getElementById('default').click();
+        };
+    </script>
+</body>
+</html>
