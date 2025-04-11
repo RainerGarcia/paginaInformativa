@@ -9,41 +9,41 @@
 </head>
 <body>
 	<header class="header">
-		<img class="banner" src="/img/banner_estructuraDeDatos.png" alt="imagen.jpeg">
+		<img class="banner" src="./img/banner_estructuraDeDatos.png" alt="imagen.jpeg">
 		<nav class="navegacion">
-			<a class="opcion1" href="/index.html" title="estructura_de_datos">Estructura de datos</a>
-			<a class="activo opcion2" href="/complexity.html" title="time_complexity">time complexity</a>
+			<a class="opcion1" href="./index.html" title="estructura_de_datos">Estructura de datos</a>
+			<a class="activo opcion2" href="./complexity.html" title="time_complexity">time complexity</a>
 		</nav>
 	</header>
 	<main class="main">
 		<article class="menu">
 			<div class="options">
 				<div id="default" class="block" onclick="location.hash='tab1';">
-					<img class="arrow" src="/img/arrow_block.png" alt="arrow_block.png">
+					<img class="arrow" src="./img/arrow_block.png" alt="arrow_block.png">
 					<p class="selection">Definición</p>
 				</div>
 				<div class="block" onclick="location.hash='tab2';">
-					<img class="arrow" src="/img/arrow_block.png" alt="arrow_block.png">
+					<img class="arrow" src="./img/arrow_block.png" alt="arrow_block.png">
 					<p class="selection">Clasificación</p>
 				</div>
 				<div class="block" onclick="location.hash='tab3';">
-					<img class="arrow" src="/img/arrow_block.png" alt="arrow_block.png">
+					<img class="arrow" src="./img/arrow_block.png" alt="arrow_block.png">
 					<p class="selection">Constante: O(1)</p>
 				</div>
 				<div class="block" onclick="location.hash='tab4';">
-					<img class="arrow" src="/img/arrow_block.png" alt="arrow_block.png">
+					<img class="arrow" src="./img/arrow_block.png" alt="arrow_block.png">
 					<p class="selection">Lineal: O(n)</p>
 				</div>
 				<div class="block" onclick="location.hash='tab5';">
-					<img class="arrow" src="/img/arrow_block.png" alt="arrow_block.png">
+					<img class="arrow" src="./img/arrow_block.png" alt="arrow_block.png">
 					<p class="selection">Logarítmica: O ( log n)</p>
 				</div>
 				<div class="block" onclick="location.hash='tab6';">
-					<img class="arrow" src="/img/arrow_block.png" alt="arrow_block.png">
+					<img class="arrow" src="./img/arrow_block.png" alt="arrow_block.png">
 					<p class="selection">Cuadrática: O(n^2)</p>
 				</div>
 				<div class="block" onclick="location.hash='tab7';">
-					<img class="arrow" src="/img/arrow_block.png" alt="arrow_block.png">
+					<img class="arrow" src="./img/arrow_block.png" alt="arrow_block.png">
 					<p class="selection">Exponencial: O(2^n)</p>
 				</div>
 			</div>
@@ -73,7 +73,7 @@
 				<h3>Grafico de complejidad de Big O</h3>
 				<p>El gráfico Big O es una notación asintótica que se usa para expresar la complejidad de un algoritmo o su rendimiento en función del tamaño de entrada. Esto ayuda a los programadores a identificar y comprender completamente el peor de los casos y el tiempo de ejecución o la memoria requerida de un algoritmo. El siguiente gráfico ilustra la complejidad Big O:</p>
 				<div class="ejemplo">
-					<img src="/img/grafico_bigo.png" alt="grafico_bigo.png">
+					<img src="./img/grafico_bigo.png" alt="grafico_bigo.png">
 				</div>
 				<p>El grafico Big O anterior muestra que O(1), complejidad de tiempo constante, es el mejor. Esto implica que su algoritmo procesa solo una declaración sin ninguna iteración. Luego esta O(log n), que es bueno, y otros similares como vemos a continuación:</p>
 				<ul>
@@ -89,7 +89,7 @@
 				<h2 class="titulo">Tiempo Constante: O(1)</h2>
 				<p>Cuando su algoritmo no depende del tamaño de entrada n, se dice que tiene una complejidad temporal constante con orden O(1). Esto significa que el tiempo de ejecución siempre será el mismo independientemente del tamaño de entrada. Por ejemplo, si un algoritmo debe devolver el primer elemento de un arreglo. Incluso si el arreglo tiene 1 millón de elementos, la complejidad temporal será constante si utiliza este enfoque:</p>
 				<div class="ejemplo">
-					<img src="/img/tiempo_constante.png" alt="tiempo_constante.png">
+					<img src="./img/tiempo_constante.png" alt="tiempo_constante.png">
 				</div>
 				<p>La función anterior requerirá un solo paso de ejecución, lo que significa que la función está en tiempo constante con una complejidad temporal O(1).</p>
 			</section>
@@ -97,28 +97,28 @@
 				<h2 class="titulo">Tiempo Lineal: O(n)</h2>
 				<p>Se obtiene complejidad de tiempo lineal cuando el tiempo de ejecución de un algoritmo aumenta linealmente con el tamaño de la entrada. Esto significa que cuando una función tiene una iteración que itera sobre un tamaño de entrada n, se dice que tiene una complejidad temporal de orden O(n). Por ejemplo, si un algoritmo debe devolver el factorial de cualquier número de entrada. Esto significa que si ingresa 5, debe realizar un bucle y multiplicar 1 x 2 x 3 x 4 x 5 y luego regresar 120:</p>
 				<div class="ejemplo">
-					<img class="ejemplo" src="/img/tiempo_lineal.png">
+					<img class="ejemplo" src="./img/tiempo_lineal.png">
 				</div>
 			</section>
 			<section id="tab5" class="parrafo">
 				<h2 class="titulo">Tiempo Logarítmico: O(log n)</h2>
 				<p>Esto es similar a la complejidad de tiempo lineal, excepto que el tiempo de ejecución no depende del tamaño de la entrada sino de la mitad del tamaño de la entrada. Cuando el tamaño de entrada disminuye en cada iteración o paso, se dice que un algoritmo tiene complejidad logarítmica. Este método es el segundo mejor porque su programa se ejecuta con la mitad del tamaño de entrada en lugar del tamaño completo. Después de todo el tamaño de entrada disminuye en cada iteración. Un gran ejemplo son la funciones de búsqueda binaria, que dividen el arreglo ordenado según su valor objetivo. Por ejemplo, supongamos que utiliza un algoritmo de búsqueda binaria para encontrar el índice de un elemento determinado en un arreglo:</p>
 				<div class="ejemplo">
-					<img class="ejemplo" src="/img/tiempo_logaritmico.png">
+					<img class="ejemplo" src="./img/tiempo_logaritmico.png">
 				</div>
 			</section>
 			<section id="tab6" class="parrafo">
 				<h2 class="titulo">Tiempo Cuadrático: O(n^2)</h2>
 				<p>Cuando se realiza una iteración anidada, es decir un bucle dentro de otro bucle, la complejidad del tiempo es cuadrática, lo cual es horrible. Una manera perfecta de explicar esto sería si tuviera un arreglo con n elementos. El bucle exterior se ejecutará n veces y el bucle interior se ejecutará n veces por cada iteración del bucle exterior, lo que dará un total de n^2 impresiones. Si el arreglo tiene 10 elementos, habrán 100 impresiones (10^2). Aquí hay un ejemplo de Jared Nielsen, donde se compara cada elemento en un arreglo para generar el índice cuando dos elementos son similares:</p>
 				<div class="ejemplo">
-					<img src="/img/tiempo_cuadratico.png">
+					<img src="./img/tiempo_cuadratico.png">
 				</div>
 			</section>
 			<section id="tab7" class="parrafo">
 				<h2 class="titulo">Tiempo Exponencial: O(2^n)</h2>
 				<p>Se obtiene una complejidad temporal exponencial cuando la taza de crecimiento se duplica con cada adición a la entrada (n), a menudo iterando a través de todos los subconjuntos de los elementos de entrada. Cada vez que una unidad de entrada aumenta en 1, el número de operaciones ejecutadas se duplica. La secuencia recursiva de Fibonacci es un buen ejemplo. Supongamos que te dan un número y quieres encontrar el n-simo elemento de la secuencia de Fibonacci La secuencia de Fibonacci es una secuencia matemática en la que cada número es la suma de los dos números anteriores, donde 0 y 1 son los dos primeros números. El tercer número es la secuencia es 1, el cuarto es 2, el quinto es 3, y así sucesivamente... (0, 1, 1, 2, 3, 5, 8, 13, …).</p>
 				<div class="ejemplo">
-					<img src="/img/tiempo_exponencial.png">
+					<img src="./img/tiempo_exponencial.png">
 				</div>
 			</section>
 		</article>
@@ -126,8 +126,8 @@
 	<footer class="foot">
 		<div>
 			<nav class="barra-foot">
-				<a href="/index.html" title="estructura_de_datos">Estructura de datos</a>
-				<a href="/complexity.html" title="time_complexity">time complexity</a>
+				<a href="./index.html" title="estructura_de_datos">Estructura de datos</a>
+				<a href="./complexity.html" title="time_complexity">time complexity</a>
 				<a href="https://www.iutepal.edu.ve/inicio" title="universidad" target="_blank">IUTEPAL</a>
 			</nav>
 		</div>
