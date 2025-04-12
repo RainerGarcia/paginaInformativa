@@ -2,4 +2,4 @@
 <p>Página creada para la clase de Estructuras de datos del 2do semestre de la carrera de TSU en informática deL IUTEPAL</p>
 <div>_________________________________________________________________________________________________________________________________<div>
   <br>
-<p>Página web: <a href="https://rainergarcia.github.io/paginaInformativa/" target="_blank">Click Aqui</a></p>
+<p>Página web: <a href="https://rainergarcia.github.io/paginaInformativa/">Click Aqui</a></p>
